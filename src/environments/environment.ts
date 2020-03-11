@@ -3,7 +3,18 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig:{
+    apiKey: 'AIzaSyCEKoLIhqF2qwapwCU0ucnaicxxq90MYLk',
+    authDomain: 'listacompralara.firebaseapp.com',
+    databaseURL: 'https://listacompralara.firebaseio.com',
+    projectId: 'listacompralara',
+    storageBucket: 'listacompralara.appspot.com',
+    messagingSenderId: '821288711219',
+    appId: '1:821288711219:web:1f0d00f1b8e9665b4f1f46',
+    measurementId: 'G-DX3LQ59DSQ'
+  },
+  title:'ListaCompra'
 };
 
 /*
