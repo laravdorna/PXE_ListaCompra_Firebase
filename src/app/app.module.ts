@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 
 import {FormsModule} from '@angular/forms';
 import { ProductosComponent } from './productos/productos.component.spec';
+import {AngularFireModule} from '@angular/fire';
+import {environment} from '../environments/environment';
+import {RouterModule} from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { ProductosComponent } from './productos/productos.component.spec';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
