@@ -1,0 +1,24 @@
+
+
+<table style="width: 100%; border: 1px solid black; ">
+  <tr>
+    <td>
+      <ul class="productos">
+        <li *ngFor="let producto of productosStock index as i;" [class.selected]="producto === producto1"
+            (click)="onClick(producto,i)">
+          <span class="productosBadge">{{producto.nombre}}</span>
+        </li>
+      </ul>
+    </td>
+    <td>
+      <ul class="productoSelecionado">
+      <span *ngFor="let productoSelecionado of productoSeleccionado index as i;">
+      <li *ngIf="producto1" [class.selected]="productoSelecionado === producto1"
+          (click)="onClick2(productoSelecionado,i)">
+      <span class="productosSelecBadge"> {{productoSelecionado.nombre}} </span>
+      </li>
+        </span>
+      </ul>
+    </td>
+  </tr>
+</table>
