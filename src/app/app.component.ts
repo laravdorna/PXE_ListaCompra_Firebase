@@ -2,6 +2,7 @@
 import { Component } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import {AuthService} from './auth.service';
+import {FireDBService} from "./fire-db.service";
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,6 @@ import {AuthService} from './auth.service';
 })
 export class AppComponent {
   title = environment.title;
-  constructor(public auth: AuthService) {
+  constructor(public auth: AuthService, public db: FireDBService) {
   }
 }

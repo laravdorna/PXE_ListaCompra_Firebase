@@ -9,6 +9,7 @@ import { ProductosComponent } from './productos/productos.component.spec';
 import {AngularFireModule} from '@angular/fire';
 import {environment} from '../environments/environment';
 import {RouterModule} from '@angular/router';
+import {AngularFireDatabaseModule} from "@angular/fire/database";
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import {RouterModule} from '@angular/router';
     FormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireModule,
+    AngularFireDatabaseModule,
     RouterModule
   ],
   providers: [],
